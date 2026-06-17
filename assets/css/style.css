@@ -19,8 +19,8 @@ body{
 
 /* Navbar */
 .navbar{
-    padding:20px 0;
     background:#111827;
+    padding:20px 0;
 }
 
 .nav-container{
@@ -51,7 +51,7 @@ body{
     color:#3B82F6;
 }
 
-/* Hero Section */
+/* Hero */
 .hero{
     min-height:80vh;
     display:flex;
