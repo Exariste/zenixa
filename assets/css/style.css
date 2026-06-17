@@ -1,1 +1,31 @@
 /* Main Stylesheet */
+.navbar{
+    padding:20px 0;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#3B82F6;
+}
+
+.nav-menu{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-menu a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.nav-menu a:hover{
+    color:#3B82F6;
+}
