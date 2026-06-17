@@ -1,6 +1,26 @@
-/* Main Stylesheet */
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:#ffffff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Navbar */
 .navbar{
     padding:20px 0;
+    background:#111827;
 }
 
 .nav-container{
@@ -10,7 +30,7 @@
 }
 
 .logo{
-    font-size:1.5rem;
+    font-size:1.8rem;
     font-weight:700;
     color:#3B82F6;
 }
@@ -22,10 +42,30 @@
 }
 
 .nav-menu a{
-    color:#fff;
+    color:#ffffff;
     text-decoration:none;
+    font-weight:500;
 }
 
 .nav-menu a:hover{
     color:#3B82F6;
+}
+
+/* Hero Section */
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.5rem;
+    color:#cbd5e1;
 }
