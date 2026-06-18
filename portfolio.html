@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | ZENIXA DIGITAL LAB</title>
+  <meta name="description" content="Explore our portfolio of web design, branding, logo design, and UI/UX projects.">
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <div data-include="components/navbar.html"></div>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Portfolio</span>
+      </div>
+      <div class="section-label">Our Work</div>
+      <h1>Projects We're Proud Of</h1>
+      <p>A curated collection of our best work across web design, branding, and digital experiences.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filter -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Websites</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="logo">Logo Design</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-cat="web">
+          <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#1e3a5f,#0f172a)">🌐</div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>Corporate Website</h4>
+              <p>Web Design · Development</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-cat="branding">
+          <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#2d1b4e,#0f172a)">✦</div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>Brand Identity</h4>
+              <p>Branding · Logo</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-cat="uiux">
+          <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#1a3a2f,#0f172a)">📱</div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>App UI Design</h4>
+              <p>UI/UX Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-cat="logo">
+          <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#3a1a1a,#0f172a)">🔷</div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>Logo Collection</h4>
+              <p>Logo Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-cat="web">
+          <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#1a2a3a,#0f172a)">🛒</div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>E-Commerce Site</h4>
+              <p>Web Design · Development</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-cat="branding">
+          <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#2a1a3a,#0f172a)">🎨</div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>Visual Identity</h4>
+              <p>Branding · Graphic Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div data-include="components/cta.html"></div>
+  <div data-include="components/footer.html"></div>
+
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
