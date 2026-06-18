@@ -1,0 +1,95 @@
+/* =========================================
+   ZENIXA — Responsive Stylesheet
+   Mobile First: 576 → 768 → 992 → 1200
+   ========================================= */
+
+/* ---- 1200px ---- */
+@media (max-width: 1200px) {
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+  .footer-grid .footer-col:last-child { grid-column: span 3; }
+}
+
+/* ---- 992px ---- */
+@media (max-width: 992px) {
+  .section { padding: 72px 0; }
+  .grid-4  { grid-template-columns: repeat(2,1fr); }
+  .why-grid,
+  .about-grid,
+  .contact-grid { grid-template-columns: 1fr; }
+  .why-visual,
+  .about-visual  { order: -1; }
+  .service-detail-card { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid .footer-col:last-child { grid-column: auto; }
+  .footer-grid .footer-brand { grid-column: span 2; }
+  .hero-stats { gap: 28px; }
+}
+
+/* ---- 768px ---- */
+@media (max-width: 768px) {
+  .nav-menu,
+  .nav-cta { display: none; }
+  .nav-toggle { display: flex; }
+
+  /* Mobile nav open */
+  .nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 72px; left: 0; right: 0;
+    background: var(--dark-2);
+    border-bottom: 1px solid var(--dark-3);
+    padding: 16px 24px 24px;
+    gap: 4px;
+    z-index: 999;
+  }
+  .nav-menu.open a {
+    padding: 12px 16px;
+    font-size: 1rem;
+    display: block;
+  }
+  .nav-cta.open {
+    display: block;
+    padding: 0 24px 24px;
+    position: fixed;
+    top: auto;
+    left: 0; right: 0;
+    background: var(--dark-2);
+    border-bottom: 1px solid var(--dark-3);
+    z-index: 998;
+  }
+  .dropdown-menu {
+    position: static;
+    display: block !important;
+    background: var(--dark-3);
+    box-shadow: none;
+    margin-top: 4px;
+    padding: 4px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .portfolio-grid,
+  .mission-grid { grid-template-columns: 1fr; }
+
+  .form-row { grid-template-columns: 1fr; }
+  .hero-stats { flex-wrap: wrap; gap: 20px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid .footer-brand { grid-column: auto; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+/* ---- 576px ---- */
+@media (max-width: 576px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  .section { padding: 56px 0; }
+  .container { padding: 0 16px; }
+  .btn-lg { padding: 14px 28px; font-size: .9rem; }
+  .hero-sub { font-size: 1rem; }
+  .card { padding: 24px; }
+  .contact-form { padding: 28px 20px; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+  .btn-group { flex-direction: column; align-items: flex-start; }
+  .scroll-top { bottom: 16px; right: 16px; }
+}
