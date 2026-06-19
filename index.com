@@ -232,6 +232,10 @@ p  { font-size: 1rem; color: var(--silver-2); }
   font-weight: 700;
   color: var(--light);
   letter-spacing: -.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
 .nav-logo span { color: var(--accent); }
 
