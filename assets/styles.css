@@ -96,19 +96,21 @@ body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);o
 .stat-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:6px;}
 
 /* SERVICES GRID */
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px;}
-.service-card{background:var(--glass);border:1px solid var(--glass-border);border-radius:20px;padding:32px 28px;transition:all .35s;position:relative;overflow:hidden;cursor:pointer;}
-.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:.35s;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;}
+.service-card{background:var(--glass);border:1px solid var(--glass-border);border-radius:20px;padding:36px 28px 28px;transition:all .35s;position:relative;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;height:100%;}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:.35s;}
 .service-card:hover{background:rgba(212,175,55,0.05);border-color:rgba(212,175,55,0.3);transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,0.4);}
 .service-card:hover::before{opacity:1;}
-.service-icon{width:52px;height:52px;background:var(--gold-dim);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:20px;transition:.35s;}
-.service-card:hover .service-icon{background:rgba(212,175,55,0.2);}
-.service-card h3{font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:10px;}
-.service-card p{font-size:.82rem;color:var(--muted);line-height:1.65;margin-bottom:16px;}
-.service-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.stag{font-size:.65rem;color:rgba(212,175,55,0.7);border:1px solid rgba(212,175,55,0.15);padding:3px 10px;border-radius:100px;}
-.service-arrow{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:600;color:var(--gold);margin-top:16px;opacity:0;transform:translateX(-8px);transition:.3s;}
-.service-card:hover .service-arrow{opacity:1;transform:translateX(0);}
+.service-num{position:absolute;top:22px;right:26px;font-family:'Poppins',sans-serif;font-size:1.7rem;font-weight:800;color:rgba(255,255,255,0.06);letter-spacing:.02em;line-height:1;}
+.service-icon{width:56px;height:56px;background:linear-gradient(135deg,rgba(212,175,55,0.25),rgba(212,175,55,0.05));border:1px solid rgba(212,175,55,0.25);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:22px;transition:.35s;}
+.service-card:hover .service-icon{background:linear-gradient(135deg,rgba(212,175,55,0.4),rgba(212,175,55,0.12));transform:scale(1.06);}
+.service-card h3{font-family:'Poppins',sans-serif;font-size:1.08rem;font-weight:700;color:var(--white);margin-bottom:10px;}
+.service-card p{font-size:.83rem;color:var(--muted);line-height:1.7;margin-bottom:18px;flex-grow:1;}
+.service-tags{display:flex;flex-wrap:wrap;gap:6px;padding-top:16px;border-top:1px solid var(--glass-border);margin-top:auto;}
+.stag{font-size:.65rem;color:rgba(212,175,55,0.75);border:1px solid rgba(212,175,55,0.18);padding:4px 11px;border-radius:100px;background:rgba(212,175,55,0.04);}
+.service-arrow{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:600;color:var(--gold);margin-top:16px;transition:.3s;}
+.service-card:hover .service-arrow{transform:translateX(4px);}
+
 
 /* WHY CHOOSE US */
 .why-section{background:var(--dark);}
@@ -277,3 +279,23 @@ body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);o
   .footer-grid{grid-template-columns:1fr;}
   .form-row{grid-template-columns:1fr;}
 }
+
+/* ===== REDESIGNED SERVICES SECTION (svc-*) ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px;}
+.svc-card{position:relative;background:var(--glass);border:1px solid var(--glass-border);border-radius:24px;padding:40px 32px 32px;transition:all .4s;overflow:hidden;}
+.svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.35;transition:.4s;}
+.svc-card:hover{background:rgba(212,175,55,0.05);border-color:rgba(212,175,55,0.35);transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,0.45);}
+.svc-card:hover::before{opacity:1;}
+.svc-num{position:absolute;top:22px;right:26px;font-family:'Poppins',sans-serif;font-size:2.4rem;font-weight:800;color:rgba(212,175,55,0.09);line-height:1;user-select:none;}
+.svc-icon-wrap{width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,rgba(212,175,55,0.2),rgba(212,175,55,0.05));border:1px solid rgba(212,175,55,0.25);display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:24px;transition:.4s;}
+.svc-card:hover .svc-icon-wrap{transform:scale(1.08) rotate(-4deg);background:linear-gradient(135deg,rgba(212,175,55,0.32),rgba(212,175,55,0.08));}
+.svc-card h3{font-family:'Poppins',sans-serif;font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:12px;}
+.svc-card p{font-size:.85rem;color:var(--muted);line-height:1.7;margin-bottom:22px;}
+.svc-divider{height:1px;background:rgba(255,255,255,0.08);margin-bottom:20px;}
+.svc-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;}
+.svc-tag{font-size:.68rem;color:rgba(255,255,255,0.78);background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);padding:5px 12px 5px 8px;border-radius:100px;display:inline-flex;align-items:center;gap:5px;}
+.svc-tag-check{color:var(--gold);font-size:.65rem;}
+.svc-cta{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:600;color:var(--gold);border:1px solid rgba(212,175,55,0.35);padding:10px 22px;border-radius:100px;transition:.3s;text-decoration:none;}
+.svc-card:hover .svc-cta{background:var(--gold);color:var(--dark);border-color:var(--gold);}
+@media(max-width:900px){.svc-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr;}}
